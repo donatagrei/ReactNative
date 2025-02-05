@@ -57,7 +57,12 @@ Run the following Maven command to execute all the tests:
 ### Using IDE
 Tests can also be run directly from an IDE (such as IntelliJ IDEA or Eclipse) by selecting and executing the test classes (e.g., ButtonTest, DatePickerTest).
 
-## Project Structure
+## Folder structure
+
+- **/src/test/java/pages:** contains the utility classes, test pages.
+- **/src/test/java/tests:** contains the test cases.
+
+## Project structure
 
 Tests are structured using POM (Page Object Model), allowing for easy readability and maintenance. The tests are organized as follows:
 - **BaseTest**: sets up and tears down the Appium driver for each test.
