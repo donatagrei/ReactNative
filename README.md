@@ -18,4 +18,9 @@ Before running the automated tests, ensure the following are installed:
 - **Appium Server**
 - **Android Studio** with the Android SDK
 - **An Android emulator** or a physical device with the target application installed
-- 
+
+## Setup
+### Clone the repository:
+```bash
+git clone https://github.com/yourusername/react-native-ui-tests.git
+cd react-native-ui-tests
