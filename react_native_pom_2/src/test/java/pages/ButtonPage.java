@@ -18,6 +18,4 @@ public class ButtonPage extends BasePage {
         buttonBlock.click();
     }
 
-
-
 }
