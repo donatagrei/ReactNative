@@ -13,8 +13,8 @@ import java.time.Duration;
 public class BasePage {
     AppiumDriver driver;
 
-    // Initializes the driver to control the app.
-    // It initializes page elements, so they can be used automatically.
+    // Initializes the driver to control the app
+    // It initializes page elements, so they can be used automatically
     public BasePage(AppiumDriver appiumDriver) {
         this.driver = appiumDriver;
         PageFactory.initElements(new AppiumFieldDecorator(appiumDriver), this);
@@ -26,10 +26,12 @@ public class BasePage {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
+    // reusable method for different menu blocks
     public void clickBlock(String block){
         driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().text(\"" + block + "\")")).click();
     }
 
+    // reusable method for scrolling until the wanted text becomes visible
     public void scrollToText(String text){
         driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().className(\"android.widget.ScrollView\")).scrollTextIntoView(\"" + text + "\")"));
     }
