@@ -22,6 +22,7 @@ public class DatePickerPage extends BasePage {
         selectDateButton.click();
     }
 
+    // A method to extract a list of all days in the current month
     public List<WebElement> getMonthViewList() {
         List<WebElement> monthViewList = driver.findElements(AppiumBy.androidUIAutomator("new UiSelector().className(\"android.view.View\").clickable(true)"));
         return monthViewList;
@@ -31,7 +32,7 @@ public class DatePickerPage extends BasePage {
         nextMonthButton.click();
     }
 
-
+    // A method to automatically select tomorrow's date in the calendar
     public void selectTomorrowDay() {
 
         String dateOfToday = driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().resourceId(\"android:id/date_picker_header_date\")")).getText();
@@ -48,8 +49,8 @@ public class DatePickerPage extends BasePage {
                 clickNextMonth();
                 driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().text(\"" + tomorrowDate + "\")")).click();
             }
-            // yra tokia klase LocalDate, duoda šiandieną
-    }
+        }
+    
 }
 
 
