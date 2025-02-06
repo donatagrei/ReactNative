@@ -11,12 +11,10 @@ public class RadioButtonPage extends BasePage{
         super(appiumDriver);
     }
 
+    // Reusable method for choosing gender
     public void chooseGender(String gender) {
         waitForVisibility(driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().text(\"" + gender + "\")")));
         driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().text(\"" + gender + "\")")).click();
     }
-
-
-
 
 }
