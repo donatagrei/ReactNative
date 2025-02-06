@@ -24,10 +24,10 @@ public class ModalPage extends BasePage {
         return ModalTitlePopUp.isDisplayed();
     }
 
+    // Checks whether the pop up includes some text or not
     public boolean isModalTitlePopUpText(String substring) {
         String wholeText = ModalTitlePopUp.getText();
         return wholeText.contains(substring);
     }
-
 
 }
