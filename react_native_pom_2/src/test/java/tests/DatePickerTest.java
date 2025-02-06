@@ -15,23 +15,6 @@ public class DatePickerTest extends BaseTest{
         basePage.clickBlock("Date Picker");
         datePickerPage.clickSelectDate();
         datePickerPage.selectTomorrowDay();
-
-
-
-
-
-
     }
-
-
-
-
-
-
-
-
-
-
-
 
 }
