@@ -14,17 +14,15 @@ public class BaseTest {
     public AppiumDriver driver;
 
     @BeforeEach
-    public void setUp() { //runs before every test.
-        // Initializes and starts a local Appium server service on the IP address "127.0.0.1"
-        AppiumDriverLocalService service;
+    public void setUp() {
+                AppiumDriverLocalService service;
         service = new AppiumServiceBuilder()
                 .withIPAddress("127.0.0.1")
                 .usingAnyFreePort()
                 .build();
         service.start();
 
-        // Initializes an AndroidDriver with specified parameters
-        UiAutomator2Options options = new UiAutomator2Options()
+                UiAutomator2Options options = new UiAutomator2Options()
                 .setUdid("emulator-5554")
                 .setPlatformName("Android")
                 .setPlatformVersion("12.0")
@@ -38,7 +36,6 @@ public class BaseTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-    // Quits the driver, ensuring proper cleanup after each test.
     @AfterEach
     public void tearDown(){
         if (driver != null) {
