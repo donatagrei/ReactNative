@@ -20,7 +20,7 @@ public class InputTest extends BaseTest {
     }
 
     @ParameterizedTest
-    @CsvSource(value = {"Laba, diena", "Testing, is cool", "Test, hard"})
+    @CsvSource(value = {"Good, evening", "Testing, is cool", "Test, hard"})
     public void parameterizedInputFieldsTest(String firstInput, String secondInput) {
         basePage = new BasePage(driver);
         inputPage = new InputPage(driver);
