@@ -75,8 +75,7 @@ Tests are structured using POM (Page Object Model), allowing for easy readabilit
 ## Dependencies
 
 The project relies on the following dependencies, as specified in the `pom.xml` file:
-
-- **Appium Java Client**: version 9.3.0
+- **Appium Java Client:** version 9.3.0
 - **JUnit Jupiter API:** version 5.10.2
 - **JUnit Jupiter Params:** version 5.10.2
 
