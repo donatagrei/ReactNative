@@ -65,20 +65,20 @@ Tests can also be run directly from an IDE (such as IntelliJ IDEA or Eclipse) by
 ## Project structure
 
 Tests are structured using POM (Page Object Model), allowing for easy readability and maintenance. The tests are organized as follows:
-- **BaseTest**: sets up and tears down the Appium driver for each test.
-- **ButtonTest**: tests related to button interactions.
-- **DatePickerTest**: tests for date picker functionalities.
-- **InputTest**: tests for input field interactions.
-- **ModalTest**: tests for modal dialogs.
-- **RadioButtonTest**: tests for radio button selections.
+- **BaseTest:** sets up and tears down the Appium driver for each test.
+- **ButtonTest:** tests related to button interactions.
+- **DatePickerTest:** tests for date picker functionalities.
+- **InputTest:** tests for input field interactions.
+- **ModalTest:** tests for modal dialogs.
+- **RadioButtonTest:** tests for radio button selections.
 
 ## Dependencies
 
 The project relies on the following dependencies, as specified in the `pom.xml` file:
 
 - **Appium Java Client**: version 9.3.0
-- **JUnit Jupiter API**: version 5.10.2
-- **JUnit Jupiter Params**: version 5.10.2
+- **JUnit Jupiter API:** version 5.10.2
+- **JUnit Jupiter Params:** version 5.10.2
 
 ## Author
 
